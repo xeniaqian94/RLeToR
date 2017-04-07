@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6658c34a-f06e-4a53-9abb-a5c658b25433" name="Default" comment="" />
+    <list default="true" id="6658c34a-f06e-4a53-9abb-a5c658b25433" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342332.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342332.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342333.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342333.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342334.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342334.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342335.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342335.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342336.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342336.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342337.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342337.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342338.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342338.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342339.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342339.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342340.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342340.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342341.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342341.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342342.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342342.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342343.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342343.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342344.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342344.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342345.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342345.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342346.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342346.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342347.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342347.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342348.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342348.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342349.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342349.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342350.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342350.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342351.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342351.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342352.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342352.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342353.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342353.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342354.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342354.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342355.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342355.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342356.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342356.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342357.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342357.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342358.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342358.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342359.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342359.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342360.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342360.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342361.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342361.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342362.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342362.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342363.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342363.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342364.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342364.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/plot.py" afterPath="$PROJECT_DIR$/loss_vs_metric/plot.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +53,8 @@
       <file leaf-file-name="plot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state relative-caret-position="261">
+              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -40,9 +75,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="24" />
-    <option name="width" value="1386" />
+    <option name="x" value="330" />
+    <option name="y" value="23" />
+    <option name="width" value="1646" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectView">
@@ -256,10 +291,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="24" width="1386" height="873" extended-state="0" />
+    <frame x="330" y="23" width="1646" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21020657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -268,7 +303,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28109452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -288,8 +323,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        <state relative-caret-position="261">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
