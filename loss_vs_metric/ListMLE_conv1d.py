@@ -32,7 +32,8 @@ parser.add_argument('--test_output', type=str, default="../data/TD2003/Fold1/tes
                     help='test output')
 parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
                     help='model path')
-
+parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff',
+                    help='result list cutoff')
 
 # toy example
 # parser.add_argument('--training_set', type=str, default="../data/toy/train.dat",
@@ -48,7 +49,7 @@ parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/mode
 
 parser.add_argument('--epochs', type=int, default=1000, metavar='N',
                     help='number of epochs to train (default: 10)')
-parser.add_argument('--lr', type=float, default=1, metavar='LR',
+parser.add_argument('--lr', type=float, default=1e-3, metavar='LR',
                     help='learning rate (default: 0.1)')
 
 parser.add_argument('--batch-size', type=int, default=64, metavar='N',
@@ -85,9 +86,11 @@ class Net(nn.Module):
         # self.m_plus1 = m + 1
         self.conv2 = nn.Conv2d(1, 1, kernel_size=(1, m), stride=(1, m),
                                bias=True)  # implicitly contains a learnable bias
+        self.tanh = nn.Tanh()
 
     def forward(self, input):
-        return self.conv2(input)
+
+        return self.tanh(self.conv2(input))
 
     def reset_grad(self):
         self.conv2.zero_grad()
@@ -95,11 +98,14 @@ class Net(nn.Module):
     def seqMLELoss(self, scores, output):
         neg_log_sum = Variable(torch.zeros(1))
         for query in range(scores.size()[0]):
+            # for query in range(1):
             # print "query " + str(query)
             score = scores[query].squeeze()
             # print "score " + str(score)  # e.g. score=[2.4500,1.412,0.929,-0.55]
-            label = output[query]  # e.g. label=[1,0,1,2]
+            label = output[query].squeeze()  # e.g. label=[1,0,1,2]
             # print "label " + str(label)
+            # print score.size()
+            # print label.size()
 
             # order = torch.sort(label, 0, descending=True)[1]  # order=[3,0,2,1]
             # order = torch.sort(order, 0)[
@@ -108,18 +114,39 @@ class Net(nn.Module):
             # ordered_score = dtype(score.size()[0])
             # ordered_score.index_copy_(0, order, score)  # tensor copy based on the position order
 
-            valid_doc_num = sum(label > -1)  # Documents that to be sorted in a query (not necessarily 100 per query)
-            # print valid_doc_num
+
+
+            valid_doc_num = torch.sum((label > -1).data)  # Valid docs count (not necessarily 1000 per query)
+
             # exp_g = ordered_score.exp()
+            # print torch.sort(score.data)
             exp_g = score.exp()
             # print exp_g
+            # print torch.sort(exp_g.data)
 
-            P_list = Variable(dtype(valid_doc_num.data[0]))
 
-            for i in range(valid_doc_num.data[0]):
-                P_list[i] = exp_g[i] / torch.sum(exp_g[i:valid_doc_num.data[0]])
-            # print P_list
-            neg_log_sum -= torch.prod(P_list, 0).log()  # equation 9 in ListMLE paper
+
+            upper_limit_n = min(valid_doc_num, args.list_cutoff)
+            # upper_limit_n = valid_doc_num
+            # print  upper_limit_n
+            P_list = Variable(dtype(upper_limit_n))
+
+            for i in range(upper_limit_n):
+                # if i % 50 == 0:
+                #     print "query position" + str(query) + " " + str(i)
+                # print "nominator " + str(exp_g[i])
+                #
+                # print "denominator " + str(torch.sum(exp_g[i:upper_limit_n]))
+                # # print "denominator " + str(torch.sum(exp_g[i:10]))
+                # print "torch.sum(exp_g) " + str(torch.sum(exp_g))
+                # print str(exp_g[i] / torch.sum(exp_g[i:upper_limit_n]))
+                P_list[i] = exp_g[i] / torch.sum(exp_g[i:upper_limit_n])
+
+            # print torch.prod(P_list, 0).log()
+            # print str(P_list)
+            # print str(P_list.log())
+            # print str(sum(P_list.log()))
+            neg_log_sum -= sum(P_list.log())  # equation 9 in ListMLE paper
         return neg_log_sum
 
     def print_param(self):
@@ -138,10 +165,16 @@ class Net(nn.Module):
 
 
 model = Net(m)
-model.reset_grad()
+
+# model.reset_grad()
+
+
 print args
 prev_loss = float("inf")
+# print (input[0][0][376])
+# print (input[0][0][0])
 
+optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 for epoch in range(args.epochs):
     # For batch training, always input and output
 
@@ -153,17 +186,23 @@ for epoch in range(args.epochs):
     # print output
 
     # Reset gradients
-    model.reset_grad()
+    # model.reset_grad()
 
     # Backward pass
     neg_log_sum_loss = model.seqMLELoss(scores, output)
+    # print neg_log_sum_loss
+
+    optimizer.zero_grad()
     neg_log_sum_loss.backward()
+
     print "neg_log_sum_loss for epoch " + str(epoch) + " " + str(neg_log_sum_loss.data[0])
 
     # print "Before gradient"
     # Apply gradients
-    for param in model.conv2.parameters():
-        param.data.add_(-args.lr * param.grad.data)
+    # for param in model.conv2.parameters():
+    #     param.data.add_(-args.lr * param.grad.data)
+
+    optimizer.step()
 
     # print "After gradient"
     # model.print_param()
@@ -184,7 +223,7 @@ for epoch in range(args.epochs):
         if (epoch % 10 == 0):
             torch.save(model.state_dict(), open(args.model_path, "w"))
     else:
-        print("Warning, loss goes up!")
+        print("Warning, loss goes up! new loss " + neg_log_sum_loss.data[0]+" old "+prev_loss)
 
     prev_loss = neg_log_sum_loss.data[0]
 
