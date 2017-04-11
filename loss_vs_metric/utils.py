@@ -47,20 +47,19 @@ def load_data(path):
             output[queryDocCount.keys().index(qid)][queryDocCount[qid].index(docid)] = score
 
     dtype = torch.FloatTensor
-    input=torch.from_numpy(input).type(dtype)
-    output=torch.from_numpy(output).type(dtype)
+    input_sorted = torch.from_numpy(input).type(dtype)
+    output_sorted = torch.from_numpy(output).type(dtype)
 
-    for query in range(output.size()[0]):
-
-        feature=input[query][0]
-        label = output[query]
+    for query in range(output_sorted.size()[0]):
+        feature = input_sorted[query][0]
+        label = output_sorted[query]
 
         order = torch.sort(label, 0, descending=True)[1]  # order=[3,0,2,1]
         order = torch.sort(order, 0)[
             1]  # order=[1,3,2,0] meaning score[0] -> position[1], score[1] -> position[3] ...
         # print feature,label,order
 
-        ordered_feature = dtype(feature.size()[0],feature.size()[1])
+        ordered_feature = dtype(feature.size()[0], feature.size()[1])
         ordered_feature.index_copy_(0, order, feature)  # tensor copy based on the position order
         # print ordered_feature
 
@@ -68,12 +67,15 @@ def load_data(path):
         ordered_label.index_copy_(0, order, label)
         # print ordered_label
 
-        input[query][0]=ordered_feature
-        output[query]=ordered_label
+        input_sorted[query][0] = ordered_feature
+        output_sorted[query] = ordered_label
 
-    input = Variable(input, requires_grad=False)
-    output = Variable(output, requires_grad=False)
+    input_sorted = Variable(input_sorted, requires_grad=False)
+    output_sorted = Variable(output_sorted, requires_grad=False)
+
+    input_unsorted = Variable(torch.from_numpy(input).type(dtype), requires_grad=False)
+    output_unsorted = Variable(torch.from_numpy(output).type(dtype), requires_grad=False)
 
     # print input
     # print output
-    return input, output, N, n, m
+    return input_sorted, output_sorted, input_unsorted, output_unsorted, N, n, m
