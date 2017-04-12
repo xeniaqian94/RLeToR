@@ -4,8 +4,10 @@
     <list default="true" id="6658c34a-f06e-4a53-9abb-a5c658b25433" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/model.dat" afterPath="$PROJECT_DIR$/data/toy/model.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/evaloutput.txt" afterPath="$PROJECT_DIR$/data/toy/evaloutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/train.dat" afterPath="$PROJECT_DIR$/data/toy/train.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/train_output.txt" afterPath="$PROJECT_DIR$/data/toy/train_output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" afterPath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
     </list>
@@ -37,8 +39,8 @@
       <file leaf-file-name="ListMLE_conv2d.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="113">
+              <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="8" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -113,8 +115,10 @@
       <find>input</find>
       <find>error</find>
       <find>5</find>
-      <find>print</find>
       <find>show</find>
+      <find>print</find>
+      <find>map</find>
+      <find>precision</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,10 +149,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-65" />
-    <option name="y" value="755" />
+    <option name="x" value="40" />
+    <option name="y" value="23" />
     <option name="width" value="1293" />
-    <option name="height" value="847" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -550,7 +554,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-65" y="755" width="1293" height="847" extended-state="0" />
+    <frame x="40" y="23" width="1293" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29543698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -558,7 +562,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4151671" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50870645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -779,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -799,10 +793,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="113">
+          <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="8" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

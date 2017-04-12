@@ -17,45 +17,47 @@ dtype = torch.FloatTensor
 parser = argparse.ArgumentParser(description='PyTorch ListMLE Example')
 
 # TD2003/Fold1
-# parser.add_argument('--training-set', type=str, default="../data/TD2003/Fold1/trainingset.txt",
-#                     help='training set')
-# # parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
-# #                     help='validation set')
-# parser.add_argument('--test-set', type=str, default="../data/TD2003/Fold1/testset.txt",
-#                     help='test set')
-# parser.add_argument('--test_output', type=str, default="../data/TD2003/Fold1/testoutput.txt",
-#                     help='test output')
-# parser.add_argument('--train_output', type=str, default="../data/TD2003/Fold1/trainoutput.txt",
-#                     help='train output')
-# parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
-#                     help='model path')
-# parser.add_argument('--eval_output', type=str, default="../data/TD2003/Fold1/evaloutput.txt",
-#                     help='eval output path')
-# parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff',
-#                     help='result list cutoff')
+parser.add_argument('--training-set', type=str, default="../data/TD2003/Fold1/trainingset.txt",
+                    help='training set')
+# parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
+#                     help='validation set')
+parser.add_argument('--test-set', type=str, default="../data/TD2003/Fold1/testset.txt",
+                    help='test set')
+parser.add_argument('--test_output', type=str, default="../data/TD2003/Fold1/testoutput.txt",
+                    help='test output')
+parser.add_argument('--train_output', type=str, default="../data/TD2003/Fold1/trainoutput.txt",
+                    help='train output')
+parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
+                    help='model path')
+parser.add_argument('--eval_output', type=str, default="../data/TD2003/Fold1/evaloutput.txt",
+                    help='eval output path')
+parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff',
+                    help='result list cutoff')
 
 # toy example
-parser.add_argument('--training_set', type=str, default="../data/toy/train.dat",
-                    help='training set')
-# parser.add_argument('--validation_set', type=str, default="../data/toy/test.dat",
-#                     help='validation set')
-parser.add_argument('--test_set', type=str, default="../data/toy/test.dat",
-                    help='test set')
-parser.add_argument('--test_output', type=str, default="../data/toy/test_output.txt",
-                    help='test output')
-parser.add_argument('--train_output', type=str, default="../data/toy/train_output.txt",
-                    help='train output')
-parser.add_argument('--model_path', type=str, default="../data/toy/model.dat",
-                    help='model path')
-parser.add_argument('--eval_output', type=str, default="../data/toy/evaloutput.txt",
-                    help='eval output path')
+# parser.add_argument('--training_set', type=str, default="../data/toy/train.dat",
+#                     help='training set')
+# # parser.add_argument('--validation_set', type=str, default="../data/toy/test.dat",
+# #                     help='validation set')
+# parser.add_argument('--test_set', type=str, default="../data/toy/test.dat",
+#                     help='test set')
+# parser.add_argument('--test_output', type=str, default="../data/toy/test_output.txt",
+#                     help='test output')
+# parser.add_argument('--train_output', type=str, default="../data/toy/train_output.txt",
+#                     help='train output')
+# parser.add_argument('--model_path', type=str, default="../data/toy/model.dat",
+#                     help='model path')
+# parser.add_argument('--eval_output', type=str, default="../data/toy/evaloutput.txt",
+#                     help='eval output path')
 
 parser.add_argument('--epochs', type=int, default=10000, metavar='N',
                     help='number of epochs to train (default: 10)')
-parser.add_argument('--lr', type=float, default=1e-3, metavar='LR',
+parser.add_argument('--lr', type=float, default=1 * 1e-3, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
+parser.add_argument('--load_model', type=bool, default=True, metavar='S',
+                    help='are we loading pre-trained model?')
 
 args = parser.parse_args()
 torch.manual_seed(args.seed)
@@ -67,7 +69,7 @@ input_test_sorted, output_test_sorted, input_test_unsorted, output_test_unsorted
     args.test_set)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
 print "input sorted " + str(input_sorted)
-print input_sorted[0].data.size()
+# print input_sorted[0].data.size()
 print "output sorted " + str(output_sorted)
 
 print "input unsorted " + str(input_unsorted)
@@ -83,10 +85,21 @@ class Net(nn.Module):
         super(Net, self).__init__()
         self.conv2 = nn.Conv2d(1, 1, kernel_size=(1, m), stride=(1, m),
                                bias=True)  # implicitly contains a learnable bias
-        self.tanh = nn.Tanh()
+
+        self.conv2.weight.data.zero_()
+        self.conv2.bias.data.zero_()
+
+        if args.load_model:
+            self.load_state_dict(torch.load(args.model_path))
+            print "Pre-trained model loaded"
+
+        # self.tanh = nn.Tanh()
+        # self.conv2_prev_weight = self.conv2.weight.data.clone()
+        # self.conv2_prev_bias = self.conv2.bias.data.clone()
 
     def forward(self, input):
-        return self.tanh(self.conv2(input))
+        # return self.tanh(self.conv2(input))
+        return self.conv2(input)
 
     def seqMLELoss(self, scores, output):
         neg_log_sum = Variable(torch.zeros(1))
@@ -130,7 +143,11 @@ model = Net(m)
 print args
 prev_loss = float("inf")
 
-optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
+original_lr = args.lr
+
+optimizer = torch.optim.Adam(model.parameters(), lr=original_lr)
+
+lr_scaled = False
 
 ndcg = np.zeros(10)
 precision = np.zeros(10)
@@ -138,7 +155,7 @@ precision = np.zeros(10)
 for epoch in range(args.epochs):
 
     # Forward pass
-    model.print_param()
+    # model.print_param()
     scores = model.forward(input_sorted)  # N * n tensor
     # print "score " + str(scores)
     # print output
@@ -176,9 +193,9 @@ for epoch in range(args.epochs):
             break
         if (epoch % 20 == 0):
             torch.save(model.state_dict(), open(args.model_path, "w"))
-            print input_unsorted.data.size()
+            # print input_unsorted.data.size()
             scores_unsorted = model.forward(input_unsorted)
-            print scores_unsorted.data.size()
+            # print scores_unsorted.data.size()
             model.save_scores(scores_unsorted, output_unsorted, args.train_output)
             os.system(
                 "perl Eval-Score-3.0.pl " + args.training_set + " " + args.train_output + " " + args.eval_output + " 0")
@@ -195,9 +212,21 @@ for epoch in range(args.epochs):
             print "PLOT Epoch " + str(epoch) + " " + str(neg_log_sum_loss.data[0]) + " ndcg " + str(
                 ndcg) + " map " + str(map) + " precision " + str(precision)
 
+
         else:
             print "neg_log_sum_loss for epoch " + str(epoch) + " " + str(neg_log_sum_loss.data[0])
+        # if lr_scaled:
+        #     optimizer = torch.optim.Adam(model.parameters(), lr=original_lr*1.2)
+        #     lr_scaled=False
+        # model.conv2_prev_weight = model.conv2.weight.data.clone()
+        # model.conv2_prev_bias = model.conv2.bias.data.clone()
+
     else:
         print("Warning, loss goes up! new loss " + str(neg_log_sum_loss.data[0]) + " old " + str(prev_loss))
+        # optimizer = torch.optim.Adam(model.parameters(), lr=original_lr*0.1)
+        # lr_scaled=True
+        # original_lr=0.1*original_lr
+        # model.conv2.weight.data = model.conv2_prev_weight
+        # model.conv2.bias.data = model.conv2_prev_bias
 
     prev_loss = neg_log_sum_loss.data[0]
