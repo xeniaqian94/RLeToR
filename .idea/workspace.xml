@@ -2,14 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6658c34a-f06e-4a53-9abb-a5c658b25433" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/ALL/OHSUMED.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold1/testset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold1/trainingset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold1/validationset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold2/testset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold2/trainingset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold2/validationset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold3/testset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold3/trainingset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold3/validationset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold4/testset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold4/trainingset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold4/validationset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold5/testset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold5/trainingset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold5/validationset.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/vali.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/vali.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/vali.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/vali.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/vali.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 5.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/model.dat" afterPath="$PROJECT_DIR$/data/toy/model.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 2.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 3.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 3.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/testoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/testoutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/evaloutput.txt" afterPath="$PROJECT_DIR$/data/toy/evaloutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/train_output.txt" afterPath="$PROJECT_DIR$/data/toy/train_output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" afterPath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/utils.py" afterPath="$PROJECT_DIR$/loss_vs_metric/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,23 +61,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plot_ListMLE.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListMLE_conv2d.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="250">
+              <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -48,54 +73,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaloutput.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/toy/evaloutput.txt">
+      <file leaf-file-name="variable.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="114">
+              <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4873" column="8" lean-forward="false" selection-start-line="4873" selection-start-column="2" selection-end-line="4873" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaloutput.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/evaloutput.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaloutput.txt.train" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.train">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2635">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Eval-Score-3.0.pl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_vs_metric/Eval-Score-3.0.pl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="250" column="4" lean-forward="false" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_output.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/toy/train_output.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train.dat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/toy/train.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -111,14 +124,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>error</find>
-      <find>input</find>
-      <find>error</find>
       <find>5</find>
-      <find>show</find>
       <find>print</find>
       <find>map</find>
       <find>precision</find>
+      <find>show</find>
+      <find>32.7702</find>
+      <find>6.4888</find>
+      <find>36.293</find>
+      <find>1 qid:7</find>
+      <find>10.0897</find>
+      <find>1 qid:41</find>
+      <find>ma</find>
+      <find>Max document for query 1</find>
+      <find>5.5</find>
+      <find>32.8802</find>
+      <find>qid:1 1:0.0</find>
+      <find>$hsNdcgRelScore</find>
+      <find>1 qid:</find>
+      <find>qid:2</find>
+      <find>qid:3</find>
+      <find>qid:4</find>
+      <find>qid:5</find>
+      <find>qid:6</find>
+      <find>qid:20</find>
+      <find>qid:1</find>
+      <find>hsNdcgRelScore</find>
+      <find>456349206349206</find>
+      <find>qid:23</find>
+      <find>qid:25</find>
+      <find>qid:37</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,19 +172,23 @@
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE.py" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_multi.py" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv1d.py" />
-        <option value="$PROJECT_DIR$/loss_vs_metric/utils.py" />
-        <option value="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_complete_ranking_lr_1e-3" />
-        <option value="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_partial_posneg_ranking_lr_1e-3" />
         <option value="$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py" />
         <option value="$PROJECT_DIR$/data/toy/train.dat" />
+        <option value="$PROJECT_DIR$/data/toy/train_output.txt" />
+        <option value="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" />
+        <option value="$PROJECT_DIR$/loss_vs_metric/utils.py" />
+        <option value="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" />
+        <option value="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt" />
+        <option value="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/trainoutput.txt" />
+        <option value="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/testoutput.txt" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
+    <option name="x" value="-225" />
     <option name="y" value="23" />
     <option name="width" value="1293" />
     <option name="height" value="873" />
@@ -286,6 +325,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueryLevelNorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueryLevelNorm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fold1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Feature-min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Feature-min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fold1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RLeToR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Feature-min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ALL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -297,6 +438,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/loss_vs_metric" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -554,15 +696,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1293" height="873" extended-state="0" />
+    <frame x="-225" y="23" width="1293" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29543698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29311678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50870645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3619403" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -572,7 +715,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -581,7 +723,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -661,14 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8599">
-          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_wb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-901">
@@ -676,14 +810,6 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/toy/test.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,38 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainingset.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="545" lean-forward="false" selection-start-line="0" selection-start-column="545" selection-end-line="0" selection-end-column="555" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/Eval-Score-3.0.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="250" column="4" lean-forward="false" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -767,6 +861,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/toy/test.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/testset.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141977">
+          <caret line="9341" column="24" lean-forward="false" selection-start-line="9341" selection-start-column="24" selection-end-line="9341" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainingset.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Feature-min/ALL/OHSUMED.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/toy/train.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/trainoutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/testoutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/toy/train_output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -775,38 +977,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/toy/train.dat">
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/Eval-Score-3.0.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="107">
+          <caret line="257" column="59" lean-forward="false" selection-start-line="257" selection-start-column="45" selection-end-line="257" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.train">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2635">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
+    <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/evaloutput.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4873" column="8" lean-forward="false" selection-start-line="4873" selection-start-column="2" selection-end-line="4873" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="8" />
+        <state relative-caret-position="250">
+          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

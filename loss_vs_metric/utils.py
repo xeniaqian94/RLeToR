@@ -6,7 +6,13 @@ from torch.autograd import Variable
 import torch
 
 
-def load_data(path):
+def normalize_by_column(matrix):
+    max_minus_min = (matrix.max(axis=0) - matrix.min(axis=0))
+    max_minus_min[max_minus_min == 0] = 1
+    return (matrix - matrix.min(axis=0)) / max_minus_min
+
+
+def load_data(path, normalized=False):
     with open(path, "r") as f:
         lines = f.readlines()
         queryDocCount = defaultdict(lambda: list())
@@ -47,6 +53,17 @@ def load_data(path):
             output[queryDocCount.keys().index(qid)][queryDocCount[qid].index(docid)] = score
 
     dtype = torch.FloatTensor
+
+    if normalized:
+        print "Normalizing, old:"
+
+        for query in queryDocCount.keys():
+            # print input[queryDocCount.keys().index(query)][0]
+
+            input[queryDocCount.keys().index(query)][0] = normalize_by_column(
+                input[queryDocCount.keys().index(query)][0])
+            # print "new "
+            # print input[queryDocCount.keys().index(query)][0]
     input_sorted = torch.from_numpy(input).type(dtype)
     output_sorted = torch.from_numpy(output).type(dtype)
 
@@ -54,9 +71,13 @@ def load_data(path):
         feature = input_sorted[query][0]
         label = output_sorted[query]
 
-        order = torch.sort(label, 0, descending=True)[1]  # order=[3,0,2,1]
-        order = torch.sort(order, 0)[
-            1]  # order=[1,3,2,0] meaning score[0] -> position[1], score[1] -> position[3] ...
+        # print query, label[0:5]
+
+        # order = torch.sort(label, 0, descending=True)[1]  # order=[3,0,2,1]
+
+
+        order = torch.Tensor(np.argsort(label.numpy())[::-1])
+        order = torch.sort(order, 0)[1]  # order=[1,3,2,0] meaning score[0] -> position[1], score[1] -> position[3] ...
         # print feature,label,order
 
         ordered_feature = dtype(feature.size()[0], feature.size()[1])
