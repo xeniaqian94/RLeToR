@@ -17,38 +17,38 @@ dtype = torch.FloatTensor
 parser = argparse.ArgumentParser(description='PyTorch ListMLE Example')
 
 # TD2003/Fold1
-# parser.add_argument('--training-set', type=str, default="../data/TD2003/Fold1/trainingset.txt",
+parser.add_argument('--training-set', type=str, default="../data/TD2003/Fold1/trainingset.txt",
+                    help='training set')
+parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
+                    help='validation set')
+parser.add_argument('--test-set', type=str, default="../data/TD2003/Fold1/testset.txt",
+                    help='test set')
+parser.add_argument('--test_output', type=str, default="../data/TD2003/Fold1/testoutput.txt",
+                    help='test output')
+parser.add_argument('--train_output', type=str, default="../data/TD2003/Fold1/trainoutput.txt",
+                    help='train output')
+parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
+                    help='model path')
+parser.add_argument('--eval_output', type=str, default="../data/TD2003/Fold1/evaloutput.txt",
+                    help='eval output path')
+parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff',
+                    help='result list cutoff')
+
+# OSHUMED-Normed
+# parser.add_argument('--training-set', type=str, default="../data/QueryLevelNorm/Fold1/train.txt",
 #                     help='training set')
 # # parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
 # #                     help='validation set')
-# parser.add_argument('--test-set', type=str, default="../data/TD2003/Fold1/testset.txt",
+# parser.add_argument('--test-set', type=str, default="../data/QueryLevelNorm/Fold1/test.txt",
 #                     help='test set')
-# parser.add_argument('--test_output', type=str, default="../data/TD2003/Fold1/testoutput.txt",
+# parser.add_argument('--test_output', type=str, default="../data/QueryLevelNorm/Fold1/testoutput.txt",
 #                     help='test output')
-# parser.add_argument('--train_output', type=str, default="../data/TD2003/Fold1/trainoutput.txt",
+# parser.add_argument('--train_output', type=str, default="../data/QueryLevelNorm/Fold1/trainoutput.txt",
 #                     help='train output')
-# parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
+# parser.add_argument('--model_path', type=str, default="../data/QueryLevelNorm/Fold1/model.txt",
 #                     help='model path')
-# parser.add_argument('--eval_output', type=str, default="../data/TD2003/Fold1/evaloutput.txt",
+# parser.add_argument('--eval_output', type=str, default="../data/QueryLevelNorm/Fold1/evaloutput.txt",
 #                     help='eval output path')
-# parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff',
-#                     help='result list cutoff')
-
-# OSHUMED-Normed
-parser.add_argument('--training-set', type=str, default="../data/QueryLevelNorm/Fold1/train.txt",
-                    help='training set')
-# parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
-#                     help='validation set')
-parser.add_argument('--test-set', type=str, default="../data/QueryLevelNorm/Fold1/test.txt",
-                    help='test set')
-parser.add_argument('--test_output', type=str, default="../data/QueryLevelNorm/Fold1/testoutput.txt",
-                    help='test output')
-parser.add_argument('--train_output', type=str, default="../data/QueryLevelNorm/Fold1/trainoutput.txt",
-                    help='train output')
-parser.add_argument('--model_path', type=str, default="../data/QueryLevelNorm/Fold1/model.txt",
-                    help='model path')
-parser.add_argument('--eval_output', type=str, default="../data/QueryLevelNorm/Fold1/evaloutput.txt",
-                    help='eval output path')
 
 # OSHUMED-unnormalized
 # parser.add_argument('--training-set', type=str, default="../data/Feature-min/Fold1/trainingset.txt",
@@ -88,7 +88,7 @@ parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
-parser.add_argument('--load_model', type=bool, default=False, metavar='S',
+parser.add_argument('--load_model', type=bool, default=True, metavar='S',
                     help='whether to load pre-trained model?')
 parser.add_argument('--query_dimension_normalization', type=bool, default=True, metavar='S',
                     help='whether to normalize by query-dimension?')
@@ -106,10 +106,11 @@ input_sorted, output_sorted, input_unsorted, output_unsorted, N, n, m = utils.lo
 # output_unsorted=output_unsorted[0].unsqueeze(0)
 
 
-
-
 input_test_sorted, output_test_sorted, input_test_unsorted, output_test_unsorted, N_test, n_test, m_test = utils.load_data(
     args.test_set)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
+
+input_valid_sorted, output_valid_sorted, input_valid_unsorted, output_valid_unsorted, N_valid, n_valid, m_valid= utils.load_data(
+    args.valid_set)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
 print "input sorted " + str(input_sorted)
 # print input_sorted[0].data.size()
@@ -197,6 +198,28 @@ class Net(nn.Module):
             # if query==0:
             #     print "Max document for query 1 "+str(np.argmax(scores_write))
 
+    def eval(self,input_this,):
+        scores_this = model.forward(input_this)
+
+        model.save_scores(scores_unsorted, output_unsorted, args.train_output)
+
+        model.save_scores(scores_test_unsorted, output_test_unsorted, args.test_output)
+
+        os.system(
+            "perl Eval-Score-3.0.pl " + args.training_set + " " + args.train_output + " " + args.eval_output + " 0")
+
+        with open(args.eval_output, "r") as eval_f:
+            for line in eval_f.readlines():
+                if ("precision:	") in line:
+                    precision = [float(value) for value in line.split()[1:11]]
+                elif ("MAP:	") in line:
+                    map = float(line.split()[1])
+                elif ("NDCG:	") in line:
+                    ndcg = [float(value) for value in line.split()[1:11]]
+
+        print "PLOT Epoch " + str(epoch) + " Train " + str(neg_log_sum_loss.data[0]) + " ndcg " + str(
+            ndcg) + " map " + str(map) + " precision " + str(precision)
+
 
 model = Net(m)
 
@@ -205,7 +228,7 @@ print args
 prev_loss = float('inf')
 original_lr = args.lr
 
-optimizer = torch.optim.Adam(model.parameters(), lr=original_lr)
+optimizer = torch.optim.Adam(model.parameters(), lr=original_lr,weight_decay=0.01)
 
 lr_scaled = False
 
@@ -298,8 +321,14 @@ for epoch in range(args.epochs):
         if (epoch % 20 == 0):
             # print model.print_param()
             # print "input unsorted "+str(input_unsorted)
-            torch.save(model.state_dict(), open(args.model_path + "." + str(epoch), "w"))
+            torch.save(model.state_dict(), open(args.model_path , "w"))
             # print input_unsorted.data.size()
+
+
+
+
+
+
             scores_unsorted = model.forward(input_unsorted)
             scores_test_unsorted = model.forward(input_test_unsorted)
 

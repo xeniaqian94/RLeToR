@@ -2,51 +2,476 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6658c34a-f06e-4a53-9abb-a5c658b25433" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/ALL/OHSUMED.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold1/testset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold1/trainingset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold1/validationset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold2/testset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold2/trainingset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold2/validationset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold3/testset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold3/trainingset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold3/validationset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold4/testset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold4/trainingset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold4/validationset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold5/testset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold5/trainingset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Feature-min/Fold5/validationset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/vali.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/vali.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/vali.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/vali.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/vali.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 5.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/model.dat" afterPath="$PROJECT_DIR$/data/toy/model.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loss_vs_metric/run_MQ2007.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.40" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.60" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.80" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1350" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1450" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.150" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.1980" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2050" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2450" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.250" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2550" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2650" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2850" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.2980" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3750" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.3980" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.40" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.4960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.50" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.550" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.5980" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.60" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.6980" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7020" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.720" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7260" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7280" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7640" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.780" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.7960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.80" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8040" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8060" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8120" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8340" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.840" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8460" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8480" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8500" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8540" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8580" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8680" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8700" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8740" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8760" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8820" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.8980" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.900" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9080" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9100" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9140" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.920" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9220" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9300" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9320" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9380" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.940" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9440" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.9520" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.960" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.980" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.0" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.20" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt.20" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 2.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 3.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model copy 3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.test" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.train" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.train" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/testoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/testoutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/evaloutput.txt" afterPath="$PROJECT_DIR$/data/toy/evaloutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/train_output.txt" afterPath="$PROJECT_DIR$/data/toy/train_output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" afterPath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/utils.py" afterPath="$PROJECT_DIR$/loss_vs_metric/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,10 +489,42 @@
       <file leaf-file-name="ListMLE_conv2d.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="202" column="8" lean-forward="false" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_MQ2007.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loss_vs_metric/run_MQ2007.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainingset.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/trainingset.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="54" lean-forward="false" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +533,7 @@
       <file leaf-file-name="variable.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="13583">
               <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
               <folding />
             </state>
@@ -86,7 +543,7 @@
       <file leaf-file-name="train.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="82841">
               <caret line="4873" column="8" lean-forward="false" selection-start-line="4873" selection-start-column="2" selection-end-line="4873" selection-end-column="8" />
               <folding />
             </state>
@@ -106,7 +563,7 @@
       <file leaf-file-name="evaloutput.txt.train" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.train">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2635">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -183,13 +640,14 @@
         <option value="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt" />
         <option value="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/trainoutput.txt" />
         <option value="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/testoutput.txt" />
+        <option value="$PROJECT_DIR$/loss_vs_metric/run_MQ2007.sh" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-225" />
-    <option name="y" value="23" />
+    <option name="x" value="40" />
+    <option name="y" value="58" />
     <option name="width" value="1293" />
     <option name="height" value="873" />
   </component>
@@ -208,7 +666,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,24 +690,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="loss_vs_metric" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="loss_vs_metric" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndcg_log_plots" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,7 +739,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TD2003" />
+              <option name="myItemId" value="QueryLevelNorm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,7 +757,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TD2003" />
+              <option name="myItemId" value="QueryLevelNorm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -339,7 +779,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="QueryLevelNorm" />
+              <option name="myItemId" value="MQ2008" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,7 +797,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="QueryLevelNorm" />
+              <option name="myItemId" value="MQ2008" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -429,7 +869,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -696,26 +1136,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-225" y="23" width="1293" height="873" extended-state="0" />
-    <editor active="false" />
+    <frame x="40" y="58" width="1293" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29311678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23201856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3619403" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28109452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3619403" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28109452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -728,17 +1168,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ndcg_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_wb.py">
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -748,13 +1178,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13685">
+          <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82841">
+          <caret line="4873" column="8" lean-forward="false" selection-start-line="4873" selection-start-column="2" selection-end-line="4873" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/evaloutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ndcg_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_wb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ndcg_log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,49 +1240,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="544" lean-forward="false" selection-start-line="0" selection-start-column="544" selection-end-line="0" selection-end-column="553" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/111.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/1233.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/123.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/12222.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/111.py" />
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/1233.py" />
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/123.py" />
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/12222.py" />
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_wb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-901">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,7 +1258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3247">
           <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-493">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,9 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,7 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141977">
           <caret line="9341" column="24" lean-forward="false" selection-start-line="9341" selection-start-column="24" selection-end-line="9341" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,7 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,17 +1342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,7 +1349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,7 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,7 +1377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,7 +1384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,13 +1391,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="257" column="59" lean-forward="false" selection-start-line="257" selection-start-column="45" selection-end-line="257" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.train">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2635">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1003,7 +1412,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="82841">
           <caret line="4873" column="8" lean-forward="false" selection-start-line="4873" selection-start-column="2" selection-end-line="4873" selection-end-column="8" />
           <folding />
         </state>
@@ -1011,16 +1420,42 @@
     </entry>
     <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="13583">
           <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/trainingset.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="54" lean-forward="false" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/run_MQ2007.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="202" column="8" lean-forward="false" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
