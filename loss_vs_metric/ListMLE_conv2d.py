@@ -5,6 +5,7 @@ from torch.autograd import Variable
 import utils
 import numpy as np
 import os
+import time
 
 dtype = torch.FloatTensor
 
@@ -17,16 +18,24 @@ dtype = torch.FloatTensor
 parser = argparse.ArgumentParser(description='PyTorch ListMLE Example')
 
 # TD2003/Fold1
-parser.add_argument('--training-set', type=str, default="../data/TD2003/Fold1/trainingset.txt",
+parser.add_argument('--training_set', type=str, default="../data/TD2003/Fold1/trainingset.txt",
                     help='training set')
-parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
+parser.add_argument('--valid_set', type=str, default="../data/TD2003/Fold1/validationset.txt",
                     help='validation set')
-parser.add_argument('--test-set', type=str, default="../data/TD2003/Fold1/testset.txt",
+parser.add_argument('--test_set', type=str, default="../data/TD2003/Fold1/testset.txt",
                     help='test set')
+
 parser.add_argument('--test_output', type=str, default="../data/TD2003/Fold1/testoutput.txt",
                     help='test output')
 parser.add_argument('--train_output', type=str, default="../data/TD2003/Fold1/trainoutput.txt",
                     help='train output')
+parser.add_argument('--valid_output', type=str, default="../data/TD2003/Fold1/validoutput.txt",
+                    help='valid output')
+
+parser.add_argument('--random_level', type=int, default=1,
+                    help="random level 1 = randomly select one ground-truth throughout training, random level 2 = dynamically & randomly select ground-truth every epoch ")
+parser.add_argument('--iter', type=int, default=1,
+                    help="iteration")
 parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
                     help='model path')
 parser.add_argument('--eval_output', type=str, default="../data/TD2003/Fold1/evaloutput.txt",
@@ -35,19 +44,21 @@ parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff
                     help='result list cutoff')
 
 # OSHUMED-Normed
-# parser.add_argument('--training-set', type=str, default="../data/QueryLevelNorm/Fold1/train.txt",
+# parser.add_argument('--training_set', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/train.txt",
 #                     help='training set')
-# # parser.add_argument('--validation-set', type=str, default="../data/TD2003/Fold1/validationset.txt",
-# #                     help='validation set')
-# parser.add_argument('--test-set', type=str, default="../data/QueryLevelNorm/Fold1/test.txt",
+# parser.add_argument('--valid_set', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/vali.txt",
+#                     help='validation set')
+# parser.add_argument('--test_set', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/test.txt",
 #                     help='test set')
-# parser.add_argument('--test_output', type=str, default="../data/QueryLevelNorm/Fold1/testoutput.txt",
+# parser.add_argument('--test_output', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/testoutput.txt",
 #                     help='test output')
-# parser.add_argument('--train_output', type=str, default="../data/QueryLevelNorm/Fold1/trainoutput.txt",
+# parser.add_argument('--train_output', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/trainoutput.txt",
 #                     help='train output')
-# parser.add_argument('--model_path', type=str, default="../data/QueryLevelNorm/Fold1/model.txt",
+# parser.add_argument('--valid_output', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/validoutput.txt",
+#                     help='valid output')
+# parser.add_argument('--model_path', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/model.txt",
 #                     help='model path')
-# parser.add_argument('--eval_output', type=str, default="../data/QueryLevelNorm/Fold1/evaloutput.txt",
+# parser.add_argument('--eval_output', type=str, default="../data/OSHUMEDQueryLevelNorm/Fold1/evaloutput.txt",
 #                     help='eval output path')
 
 # OSHUMED-unnormalized
@@ -69,14 +80,16 @@ parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff
 # toy example
 # parser.add_argument('--training_set', type=str, default="../data/toy/train.dat",
 #                     help='training set')
-# # parser.add_argument('--validation_set', type=str, default="../data/toy/test.dat",
-# #                     help='validation set')
+# parser.add_argument('--valid_set', type=str, default="../data/toy/test.dat",
+#                     help='validation set')
 # parser.add_argument('--test_set', type=str, default="../data/toy/test.dat",
 #                     help='test set')
 # parser.add_argument('--test_output', type=str, default="../data/toy/test_output.txt",
 #                     help='test output')
 # parser.add_argument('--train_output', type=str, default="../data/toy/train_output.txt",
 #                     help='train output')
+# parser.add_argument('--valid_output', type=str, default="../data/toy/test_output.txt",
+#                     help='valid output')
 # parser.add_argument('--model_path', type=str, default="../data/toy/model.dat",
 #                     help='model path')
 # parser.add_argument('--eval_output', type=str, default="../data/toy/evaloutput.txt",
@@ -84,11 +97,11 @@ parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff
 
 parser.add_argument('--epochs', type=int, default=10000, metavar='N',
                     help='number of epochs to train (default: 10)')
-parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
+parser.add_argument('--lr', type=float, default=0.05, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
-parser.add_argument('--load_model', type=bool, default=True, metavar='S',
+parser.add_argument('--load_model', type=bool, default=False, metavar='S',
                     help='whether to load pre-trained model?')
 parser.add_argument('--query_dimension_normalization', type=bool, default=True, metavar='S',
                     help='whether to normalize by query-dimension?')
@@ -96,27 +109,27 @@ parser.add_argument('--query_dimension_normalization', type=bool, default=True, 
 args = parser.parse_args()
 torch.manual_seed(args.seed)
 
-input_sorted, output_sorted, input_unsorted, output_unsorted, N, n, m = utils.load_data(
+args.test_output = args.test_output + "." + str(args.random_level) + "." + str(args.iter)
+args.train_output = args.train_output + "." + str(args.random_level) + "." + str(args.iter)
+args.valid_output = args.valid_output + "." + str(args.random_level) + "." + str(args.iter)
+
+args.model_path = args.model_path + "." + str(args.random_level) + "." + str(args.iter)
+args.eval_output = args.eval_output + "." + str(args.random_level) + "." + str(args.iter)
+
+input_sorted, output_sorted, input_unsorted, output_unsorted, N, n, m = utils.load_data_ListMLE(
     args.training_set,
     args.query_dimension_normalization)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
-# input_sorted = input_sorted[1].unsqueeze(0)
-# output_sorted = output_sorted[1].unsqueeze(0)
-# input_unsorted=input_unsorted[0].unsqueeze(0)
-# output_unsorted=output_unsorted[0].unsqueeze(0)
+torch.save(input_sorted,args.model_path.replace("model","input"))
+torch.save(output_sorted,args.model_path.replace("model","output"))
 
+input_test_sorted, output_test_sorted, input_test_unsorted, output_test_unsorted, N_test, n_test, m_test = utils.load_data_ListMLE(
+    args.test_set,
+    args.query_dimension_normalization)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
-input_test_sorted, output_test_sorted, input_test_unsorted, output_test_unsorted, N_test, n_test, m_test = utils.load_data(
-    args.test_set)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
-
-input_valid_sorted, output_valid_sorted, input_valid_unsorted, output_valid_unsorted, N_valid, n_valid, m_valid= utils.load_data(
-    args.valid_set)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
-
-print "input sorted " + str(input_sorted)
-# print input_sorted[0].data.size()
-print "output sorted " + str(output_sorted)
-print "input unsorted " + str(input_unsorted)
-print "output unsorted " + str(output_unsorted)
+input_valid_sorted, output_valid_sorted, input_valid_unsorted, output_valid_unsorted, N_valid, n_valid, m_valid = utils.load_data_ListMLE(
+    args.valid_set,
+    args.query_dimension_normalization)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
 print "N " + str(N)
 print "n " + str(n)
@@ -127,7 +140,7 @@ class Net(nn.Module):
     def __init__(self, m):  # m is the feature dimension except x0 term
         super(Net, self).__init__()
         self.conv2 = nn.Conv2d(1, 1, kernel_size=(1, m), stride=(1, m),
-                               bias=False)  # implicitly contains a learnable bias
+                               bias=True)  # implicitly contains a learnable bias
 
         self.conv2.weight.data.zero_()
         # self.conv2.bias.data.zero_()
@@ -147,34 +160,43 @@ class Net(nn.Module):
     def seqMLELoss(self, scores, output):
         neg_log_sum = Variable(torch.zeros(1))
         for query in range(scores.size()[0]):
+
+            np.random.seed(int(time.time()))
+
             score = scores[query].squeeze()  # e.g. score ordered by groundtruth label
             label = output[query].squeeze()  # e.g. label ordered by groundtruth, not existing doc as -1
             valid_doc_num = torch.sum((label > -1).data)
 
             # print valid_doc_num
-
             exp_g = score.exp()
-            # print "Exp_g " + str(exp_g)
-
-            upper_limit_n = valid_doc_num
 
             upper_limit_n = torch.sum((label > 0).data)
 
+            if upper_limit_n > 0:
 
-            # print  "upper limit n " + str(upper_limit_n)
-            P_list = Variable(dtype(upper_limit_n))
+                P_list = Variable(dtype(upper_limit_n))
 
-            # total_sum=torch.sum(exp_g[0:upper_limit_n])
+                # if args.random_level == 2:
+                #
+                #     total_sum = torch.sum(exp_g[:valid_doc_num])
+                #     denom = Variable(dtype(upper_limit_n))
+                #     denom[0] = total_sum
+                #
+                #     until_grade_2 = torch.sum((label > 1).data)
+                #
+                #     perm = list(np.random.permutation(np.arange(until_grade_2))) + list(
+                #         np.random.permutation(np.arange(until_grade_2, upper_limit_n)))
+                #
+                #     for i in range(1, upper_limit_n):
+                #         denom[i] = denom[i - 1] - exp_g[perm[i - 1]]
+                #     for i in range(upper_limit_n):
+                #         P_list[i] = exp_g[perm[i]] / denom[i]
 
-            for i in range(upper_limit_n):
-                P_list[i] = exp_g[i] / torch.sum(exp_g[i:valid_doc_num])
+                if args.random_level == 1:
+                    for i in range(upper_limit_n):
+                        P_list[i] = exp_g[i] / torch.sum(exp_g[i:valid_doc_num])  # one-hot groundtruth
 
-            # print "start P_list value " + str(P_list[:torch.sum((label > 0).data)])
-            # print "start P_list value " + str(P_list[-3:])
-            # print "P_list value " + str(P_list[torch.sum((label > 0).data):torch.sum((label > 0).data)+3])
-            if upper_limit_n>0:
                 neg_log_sum -= sum(P_list.log())  # equation 9 in ListMLE paper
-            # print sum(P_list.log())
         # print neg_log_sum
 
         return neg_log_sum
@@ -198,17 +220,15 @@ class Net(nn.Module):
             # if query==0:
             #     print "Max document for query 1 "+str(np.argmax(scores_write))
 
-    def eval(self,input_this,):
+    def eval(self, input_this, output_this, outputpath_this, trainpath_this, evalpath_this):
         scores_this = model.forward(input_this)
 
-        model.save_scores(scores_unsorted, output_unsorted, args.train_output)
-
-        model.save_scores(scores_test_unsorted, output_test_unsorted, args.test_output)
+        model.save_scores(scores_this, output_this, outputpath_this)
 
         os.system(
-            "perl Eval-Score-3.0.pl " + args.training_set + " " + args.train_output + " " + args.eval_output + " 0")
+            "perl Eval-Score-3.0.pl " + trainpath_this + " " + outputpath_this + " " + evalpath_this + " 0")
 
-        with open(args.eval_output, "r") as eval_f:
+        with open(evalpath_this, "r") as eval_f:
             for line in eval_f.readlines():
                 if ("precision:	") in line:
                     precision = [float(value) for value in line.split()[1:11]]
@@ -217,7 +237,7 @@ class Net(nn.Module):
                 elif ("NDCG:	") in line:
                     ndcg = [float(value) for value in line.split()[1:11]]
 
-        print "PLOT Epoch " + str(epoch) + " Train " + str(neg_log_sum_loss.data[0]) + " ndcg " + str(
+        print "PLOT Epoch " + str(epoch) + " " + trainpath_this + " " + str(neg_log_sum_loss.data[0]) + " ndcg " + str(
             ndcg) + " map " + str(map) + " precision " + str(precision)
 
 
@@ -228,49 +248,22 @@ print args
 prev_loss = float('inf')
 original_lr = args.lr
 
-optimizer = torch.optim.Adam(model.parameters(), lr=original_lr,weight_decay=0.01)
+optimizer = torch.optim.Adam(model.parameters(), lr=original_lr)
 
 lr_scaled = False
 
 ndcg = np.zeros(10)
 precision = np.zeros(10)
 
-scores_unsorted = model.forward(input_unsorted)
-scores_test_unsorted = model.forward(input_test_unsorted)
+epoch = -1
 
-# print "output unsorted " + str(scores_unsorted)
-# print scores_unsorted.data.size()
-model.save_scores(scores_unsorted, output_unsorted, args.train_output)
+neg_log_sum_loss = Variable(torch.zeros(1))
 
-model.save_scores(scores_test_unsorted, output_test_unsorted, args.test_output)
-os.system(
-    "perl Eval-Score-3.0.pl " + args.training_set + " " + args.train_output + " " + args.eval_output + ".train 1")
-print scores_unsorted
-with open(args.eval_output + ".train", "r") as eval_f:
-    for line in eval_f.readlines():
-        if ("precision:	") in line:
-            precision = [float(value) for value in line.split()[1:11]]
-        elif ("MAP:	") in line:
-            map = float(line.split()[1])
-        elif ("NDCG:	") in line:
-            ndcg = [float(value) for value in line.split()[1:11]]
-
-print "PLOT Epoch -1  ndcg " + str(
-    ndcg) + " map " + str(map) + " precision " + str(precision)
-
-os.system("perl Eval-Score-3.0.pl " + args.test_set + " " + args.test_output + " " + args.eval_output + ".test 1")
-
-with open(args.eval_output + ".test", "r") as eval_f:
-    for line in eval_f.readlines():
-        if ("precision:	") in line:
-            precision = [float(value) for value in line.split()[1:11]]
-        elif ("MAP:	") in line:
-            map = float(line.split()[1])
-        elif ("NDCG:	") in line:
-            ndcg = [float(value) for value in line.split()[1:11]]
-
-print "PLOT Epoch -1 Test ndcg " + str(
-    ndcg) + " map " + str(map) + " precision " + str(precision)
+model.eval(input_unsorted, output_unsorted, args.train_output, args.training_set, args.eval_output + ".train")
+model.eval(input_valid_unsorted, output_valid_unsorted, args.valid_output, args.valid_set,
+           args.eval_output + ".valid")
+model.eval(input_test_unsorted, output_test_unsorted, args.test_output, args.test_set,
+           args.eval_output + ".test")
 
 for epoch in range(args.epochs):
     # for query in range(input_sorted.data.size()[0]):
@@ -312,7 +305,7 @@ for epoch in range(args.epochs):
         # model.print_param()
         # Save the model see discussion: https: // discuss.pytorch.org / t / saving - torch - models / 838 / 4
 
-        if abs(neg_log_sum_loss.data[0] - prev_loss) < 1e-5:
+        if abs(neg_log_sum_loss.data[0] - prev_loss) < 5*1e-5:
             # if abs(neg_log_sum_loss.data[0] - prev_loss[query]) < 1e-5:
             torch.save(model.state_dict(), open(args.model_path, "w"))
             # scores_test = model.forward(input_test)
@@ -321,73 +314,24 @@ for epoch in range(args.epochs):
         if (epoch % 20 == 0):
             # print model.print_param()
             # print "input unsorted "+str(input_unsorted)
-            torch.save(model.state_dict(), open(args.model_path , "w"))
+            torch.save(model.state_dict(), open(args.model_path, "w"))
             # print input_unsorted.data.size()
 
-
-
-
-
-
-            scores_unsorted = model.forward(input_unsorted)
-            scores_test_unsorted = model.forward(input_test_unsorted)
-
-            # print "output unsorted " + str(scores_unsorted)
-            # print scores_unsorted.data.size()
-            model.save_scores(scores_unsorted, output_unsorted, args.train_output)
-
-            model.save_scores(scores_test_unsorted, output_test_unsorted, args.test_output)
-
-            os.system(
-                "perl Eval-Score-3.0.pl " + args.training_set + " " + args.train_output + " " + args.eval_output + " 0")
-
-            with open(args.eval_output, "r") as eval_f:
-                for line in eval_f.readlines():
-                    if ("precision:	") in line:
-                        precision = [float(value) for value in line.split()[1:11]]
-                    elif ("MAP:	") in line:
-                        map = float(line.split()[1])
-                    elif ("NDCG:	") in line:
-                        ndcg = [float(value) for value in line.split()[1:11]]
-
-            print "PLOT Epoch " + str(epoch) + " Train " + str(neg_log_sum_loss.data[0]) + " ndcg " + str(
-                ndcg) + " map " + str(map) + " precision " + str(precision)
-
-            os.system(
-                "perl Eval-Score-3.0.pl " + args.test_set + " " + args.test_output + " " + args.eval_output + " 0")
-
-            with open(args.eval_output, "r") as eval_f:
-                for line in eval_f.readlines():
-                    if ("precision:	") in line:
-                        precision = [float(value) for value in line.split()[1:11]]
-                    elif ("MAP:	") in line:
-                        map = float(line.split()[1])
-                    elif ("NDCG:	") in line:
-                        ndcg = [float(value) for value in line.split()[1:11]]
-
-            print "PLOT Epoch " + str(epoch) + " Test " + str(neg_log_sum_loss.data[0]) + " ndcg " + str(
-                ndcg) + " map " + str(map) + " precision " + str(precision)
-
-
+            model.eval(input_unsorted, output_unsorted, args.train_output, args.training_set,
+                       args.eval_output + ".train")
+            model.eval(input_valid_unsorted, output_valid_unsorted, args.valid_output, args.valid_set,
+                       args.eval_output + ".valid")
+            model.eval(input_test_unsorted, output_test_unsorted, args.test_output, args.test_set,
+                       args.eval_output + ".test")
         else:
             # print "neg_log_sum_loss for epoch " + str(epoch) + " " + str(query) + " " + str(k) + " " + str(
             #     neg_log_sum_loss.data[0])
             print "neg_log_sum_loss for epoch " + str(epoch) + " " + str(
                 neg_log_sum_loss.data[0])
-            # if lr_scaled:
-            #     optimizer = torch.optim.Adam(model.parameters(), lr=original_lr*1.2)
-            #     lr_scaled=False
-            # model.conv2_prev_weight = model.conv2.weight.data.clone()
-            # model.conv2_prev_bias = model.conv2.bias.data.clone()
+
 
     else:
         print("Warning, loss goes up! new loss " + str(neg_log_sum_loss.data[0]) + " old " + str(prev_loss))
-        # print("Warning, loss goes up! new loss " + str(neg_log_sum_loss.data[0]) + " old " + str(prev_loss[query]))
-        # optimizer = torch.optim.Adam(model.parameters(), lr=original_lr*0.1)
-        # lr_scaled=True
-        # original_lr=0.1*original_lr
-        # model.conv2.weight.data = model.conv2_prev_weight
-        # model.conv2.bias.data = model.conv2_prev_bias
 
     # prev_loss[query] = neg_log_sum_loss.data[0]
     prev_loss = neg_log_sum_loss.data[0]

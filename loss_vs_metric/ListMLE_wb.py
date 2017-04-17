@@ -51,7 +51,7 @@ parser.add_argument('--log-interval', type=int, default=10, metavar='N',
 args = parser.parse_args()
 torch.manual_seed(args.seed)
 
-input, output, N, n, m = utils.load_data(
+input, output, N, n, m = utils.load_data_ListMLE(
     args.training_set)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
 input = Variable(torch.from_numpy(input).type(dtype), requires_grad=False)
