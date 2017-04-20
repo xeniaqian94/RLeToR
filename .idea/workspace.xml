@@ -2,148 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6658c34a-f06e-4a53-9abb-a5c658b25433" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/ALL/OHSUMED.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold1/evaloutput.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold1/model.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold1/testset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold1/trainingset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold1/trainoutput.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold1/validationset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold2/testset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold2/trainingset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold2/validationset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold3/testset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold3/trainingset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold3/validationset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold4/testset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold4/trainingset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold4/validationset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold5/testset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold5/trainingset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Feature-min/Fold5/validationset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold1/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold1/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold1/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold2/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold2/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold2/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold3/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold3/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold3/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold4/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold4/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold4/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold5/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold5/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Fold5/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/NULL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/Querylevelnorm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/S1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/S2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/S3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/S4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/S5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/min.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2007/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold1/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold1/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold1/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold2/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold2/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold2/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold3/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold3/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold3/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold4/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold4/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold4/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold5/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold5/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Fold5/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/NULL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/Querylevelnorm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/S1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/S2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/S3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/S4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/S5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/min.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/MQ2008/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.test" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/evaloutput.txt.train" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/model.txt.20" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/testoutput.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/trainoutput.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold1/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold2/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold3/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold4/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/QueryLevelNorm/Fold5/vali.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_complete_ranking_lr_1e-3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_partial_posneg_ranking_lr_1e-3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342332.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342333.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342334.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342335.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342336.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342337.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342338.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342339.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342340.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342341.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342342.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342343.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342344.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342346.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342347.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342348.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342349.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342350.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342351.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342352.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342353.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342354.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342355.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342356.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342357.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342358.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342359.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342360.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342361.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342362.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342363.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/342364.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/ListMLE_complete_ranking_lr_1e-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/ListMLE_partial_posneg_ranking_lr_1e-3.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/model.dat" afterPath="$PROJECT_DIR$/data/toy/model.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loss_vs_metric/groundtruth_rand_level_21" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loss_vs_metric/groundtruth_random_level_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loss_vs_metric/plot_ground_random_level_1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_1_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_1_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_1_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_1_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_1_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_1_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_2_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_2_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_2_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_2_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_2_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold1_trainlog_ListMLE_txt_1_2_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_1_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_1_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_1_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_1_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_1_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_1_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_2_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_2_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_2_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_2_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_2_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold2_trainlog_ListMLE_txt_1_2_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_1_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_1_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_1_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_1_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_1_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_1_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_2_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_2_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_2_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_2_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_2_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold3_trainlog_ListMLE_txt_1_2_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold4_trainlog_ListMLE_txt_1_1_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold4_trainlog_ListMLE_txt_1_1_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold4_trainlog_ListMLE_txt_1_1_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold4_trainlog_ListMLE_txt_1_1_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold4_trainlog_ListMLE_txt_1_1_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold4_trainlog_ListMLE_txt_1_1_vali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold5_trainlog_ListMLE_txt_1_1_test.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold5_trainlog_ListMLE_txt_1_1_test.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold5_trainlog_ListMLE_txt_1_1_train.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold5_trainlog_ListMLE_txt_1_1_train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold5_trainlog_ListMLE_txt_1_1_vali.png" afterPath="$PROJECT_DIR$/loss_vs_metric/ndcg_log_plots/TD2003_Fold5_trainlog_ListMLE_txt_1_1_vali.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.test" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.test" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.train" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/evaloutput.txt.train" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/model.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/testoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/testoutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" afterPath="$PROJECT_DIR$/data/TD2003/Fold1/trainoutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/test.dat" afterPath="$PROJECT_DIR$/data/toy/test.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/test_output.txt" afterPath="$PROJECT_DIR$/data/toy/test_output.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/train.dat" afterPath="$PROJECT_DIR$/data/toy/train.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/toy/train_output.txt" afterPath="$PROJECT_DIR$/data/toy/train_output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" afterPath="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/ListMLE_wb.py" afterPath="$PROJECT_DIR$/loss_vs_metric/ListMLE_wb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py" afterPath="$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/plot_ndcg_log.py" afterPath="$PROJECT_DIR$/loss_vs_metric/plot_ndcg_log.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/utils.py" afterPath="$PROJECT_DIR$/loss_vs_metric/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loss_vs_metric/run_TD2003_ListMLE.sh" afterPath="$PROJECT_DIR$/loss_vs_metric/run_TD2003_ListMLE.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -158,36 +46,76 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ListMLE_conv2d.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListMLE_conv2d.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1382">
-              <caret line="98" column="67" lean-forward="true" selection-start-line="98" selection-start-column="67" selection-end-line="98" selection-end-column="67" />
+            <state relative-caret-position="150">
+              <caret line="295" column="112" lean-forward="false" selection-start-line="295" selection-start-column="112" selection-end-line="295" selection-end-column="112" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankSVM.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_vs_metric/RankSVM.py">
+      <file leaf-file-name="trainlog_ListMLE.txt.21.1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_ListMLE.txt.21.1">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="86" column="53" lean-forward="false" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_OSHUMED_ListMLE.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_vs_metric/run_OSHUMED_ListMLE.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="-191200">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainlog_RankSVM.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_RankSVM.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-159947">
+              <caret line="4742" column="0" lean-forward="false" selection-start-line="4742" selection-start-column="0" selection-end-line="4742" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainlog_ListMLE.txt.21.2" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_ListMLE.txt.21.2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-74699">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groundtruth_rand_level_21" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/loss_vs_metric/groundtruth_rand_level_21">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="106" lean-forward="false" selection-start-line="0" selection-start-column="106" selection-end-line="0" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groundtruth_random_level_1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loss_vs_metric/groundtruth_random_level_1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot_ground_random_level_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ground_random_level_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,38 +123,18 @@
       <file leaf-file-name="run_TD2003_ListMLE.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/run_TD2003_ListMLE.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="255">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainlog_ListMLE.txt.1.1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/trainlog_ListMLE.txt.1.1">
+      <file leaf-file-name="trainlog_ListMLE.txt.21.1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.21.1">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53515">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainlog_ListMLE.txt.2.1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/trainlog_ListMLE.txt.2.1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="3196" column="24" lean-forward="false" selection-start-line="3196" selection-start-column="24" selection-end-line="3196" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainlog_ListMLE.txt.1.1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.1.1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="1356" column="44" lean-forward="false" selection-start-line="1356" selection-start-column="44" selection-end-line="1356" selection-end-column="44" />
+            <state relative-caret-position="-114666">
+              <caret line="4575" column="45" lean-forward="false" selection-start-line="4575" selection-start-column="45" selection-end-line="4575" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -235,32 +143,9 @@
       <file leaf-file-name="plot_ListMLE.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="172" column="42" lean-forward="false" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
+            <state relative-caret-position="289">
+              <caret line="22" column="74" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="74" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainlog_ListMLE.txt.2.1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_ListMLE.txt.2.1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35315">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_vs_metric/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="69" column="44" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#203#359#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -276,8 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>qid:2</find>
-      <find>qid:3</find>
       <find>qid:4</find>
       <find>qid:5</find>
       <find>qid:6</find>
@@ -305,7 +188,9 @@
       <find>map</find>
       <find>2 qid:8</find>
       <find>query total_sum</find>
+      <find>if args.random_level</find>
       <find>print</find>
+      <find>args.random_level</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -357,13 +242,18 @@
         <option value="$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/trainlog_ListMLE.txt.2.1" />
         <option value="$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.1.1" />
         <option value="$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py" />
+        <option value="$PROJECT_DIR$/loss_vs_metric/groundtruth_random_level_1" />
+        <option value="$PROJECT_DIR$/loss_vs_metric/plot_ground_random_level_1.py" />
         <option value="$PROJECT_DIR$/loss_vs_metric/run_TD2003_ListMLE.sh" />
+        <option value="$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.21.1" />
         <option value="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
+        <option value="$PROJECT_DIR$/data/TD2003/Fold2/trainlog_ListMLE.txt.21.2" />
+        <option value="$PROJECT_DIR$/loss_vs_metric/groundtruth_rand_level_21" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="115" />
+    <option name="x" value="12" />
     <option name="y" value="23" />
     <option name="width" value="1314" />
     <option name="height" value="873" />
@@ -482,68 +372,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TD2003" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fold1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSHUMEDQueryLevelNorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RLeToR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSHUMEDQueryLevelNorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fold1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -556,30 +384,20 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/loss_vs_metric" />
+      <recent name="$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/loss_vs_metric" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ListMLE_conv2d">
+  <component name="RunManager" selected="Bash.run_TD2003_ListMLE.sh">
     <configuration default="false" name="run_TD2003_RankSVM.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/loss_vs_metric" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loss_vs_metric/run_TD2003_RankSVM.sh" />
-      <option name="PARAMETERS" value="" />
-      <module name="RLeToR" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="run_OSHUMED_RankSVM.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/loss_vs_metric" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loss_vs_metric/run_OSHUMED_RankSVM.sh" />
       <option name="PARAMETERS" value="" />
       <module name="RLeToR" />
       <envs />
@@ -620,6 +438,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RLeToR" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="plot_ground_random_level_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/loss_vs_metric" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RLeToR" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loss_vs_metric/plot_ground_random_level_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -803,18 +638,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Bash.run_TD2003_RankSVM.sh" />
-      <item index="1" class="java.lang.String" itemvalue="Bash.run_OSHUMED_RankSVM.sh" />
-      <item index="2" class="java.lang.String" itemvalue="Bash.run_TD2003_ListMLE.sh" />
-      <item index="3" class="java.lang.String" itemvalue="Bash.run_OSHUMED_ListMLE.sh" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ListMLE_conv2d" />
+      <item index="1" class="java.lang.String" itemvalue="Bash.run_TD2003_ListMLE.sh" />
+      <item index="2" class="java.lang.String" itemvalue="Bash.run_OSHUMED_ListMLE.sh" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ListMLE_conv2d" />
+      <item index="4" class="java.lang.String" itemvalue="Python.plot_ground_random_level_1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ListMLE_conv2d" />
-        <item index="1" class="java.lang.String" itemvalue="Bash.run_TD2003_ListMLE.sh" />
-        <item index="2" class="java.lang.String" itemvalue="Bash.run_OSHUMED_ListMLE.sh" />
-        <item index="3" class="java.lang.String" itemvalue="Bash.run_TD2003_RankSVM.sh" />
-        <item index="4" class="java.lang.String" itemvalue="Bash.run_OSHUMED_RankSVM.sh" />
+        <item index="0" class="java.lang.String" itemvalue="Bash.run_TD2003_ListMLE.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ListMLE_conv2d" />
+        <item index="2" class="java.lang.String" itemvalue="Python.plot_ground_random_level_1" />
+        <item index="3" class="java.lang.String" itemvalue="Bash.run_OSHUMED_ListMLE.sh" />
+        <item index="4" class="java.lang.String" itemvalue="Bash.run_TD2003_RankSVM.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -832,15 +667,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="23" width="1314" height="873" extended-state="0" />
-    <editor active="false" />
+    <frame x="12" y="23" width="1314" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23363775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24733637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4937811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4800995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -864,58 +699,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/trainoutput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/testoutput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/evaloutput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/toy/train_output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/evaloutput.txt.train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/evaloutput.txt" />
-    <entry file="file://$USER_HOME$/miniconda3/lib/python2.7/site-packages/torch/autograd/variable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13583">
-          <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Feature-min/Fold1/trainingset.txt" />
-    <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold2/train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/Eval-Score-3.0.pl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -1143,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_RankSVM.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84652">
-          <caret line="4742" column="0" lean-forward="false" selection-start-line="4742" selection-start-column="0" selection-end-line="4742" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/OSHUMEDQueryLevelNorm/Fold1/train.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -1172,7 +947,7 @@
         <state relative-caret-position="114">
           <caret line="86" column="53" lean-forward="false" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1220,14 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="172" column="42" lean-forward="false" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.1.1">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-134">
@@ -1244,21 +1011,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ground_random_level_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/plot_ListMLE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="74" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.1.6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="11362" column="0" lean-forward="true" selection-start-line="11362" selection-start-column="0" selection-end-line="11362" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.1.3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189228">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.1.9">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191778">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/run_TD2003_ListMLE.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="255">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold1/trainlog_ListMLE.txt.21.1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114666">
+          <caret line="4575" column="45" lean-forward="false" selection-start-line="4575" selection-start-column="45" selection-end-line="4575" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loss_vs_metric/ListMLE_conv2d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1382">
-          <caret line="98" column="67" lean-forward="true" selection-start-line="98" selection-start-column="67" selection-end-line="98" selection-end-column="67" />
+        <state relative-caret-position="150">
+          <caret line="295" column="112" lean-forward="false" selection-start-line="295" selection-start-column="112" selection-end-line="295" selection-end-column="112" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_ListMLE.txt.21.1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191200">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_RankSVM.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159947">
+          <caret line="4742" column="0" lean-forward="false" selection-start-line="4742" selection-start-column="0" selection-end-line="4742" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/groundtruth_random_level_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TD2003/Fold2/trainlog_ListMLE.txt.21.2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74699">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_vs_metric/groundtruth_rand_level_21">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="106" lean-forward="false" selection-start-line="0" selection-start-column="106" selection-end-line="0" selection-end-column="106" />
+          <folding />
         </state>
       </provider>
     </entry>

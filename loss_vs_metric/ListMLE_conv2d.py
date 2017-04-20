@@ -1,3 +1,6 @@
+from collections import defaultdict
+
+import re
 import torch
 import argparse
 import torch.nn as nn
@@ -97,7 +100,7 @@ parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff
 
 parser.add_argument('--epochs', type=int, default=10000, metavar='N',
                     help='number of epochs to train (default: 10)')
-parser.add_argument('--lr', type=float, default=0.05, metavar='LR',
+parser.add_argument('--lr', type=float, default=0.1, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
@@ -107,6 +110,24 @@ parser.add_argument('--query_dimension_normalization', type=bool, default=True, 
                     help='whether to normalize by query-dimension?')
 
 args = parser.parse_args()
+
+input_string = defaultdict(lambda: list())
+
+input_string[(1, 1)] = [9, 3, 6]
+input_string[(1, 2)] = [1, 5, 7]
+
+input_string[(2, 1)] = [9, 1, 2]
+input_string[(2, 2)] = [7, 10, 3]
+
+input_string[(3, 1)] = [2, 10, 6]
+input_string[(3, 2)] = [1, 4, 8]
+
+input_string[(4, 1)] = [4, 9, 10]
+input_string[(4, 2)] = [1, 6, 8]
+
+input_string[(5, 1)] = [6, 4, 8]
+input_string[(5, 2)] = [1, 5, 3]
+
 torch.manual_seed(args.seed)
 
 args.test_output = args.test_output + "." + str(args.random_level) + "." + str(args.iter)
@@ -120,8 +141,8 @@ input_sorted, output_sorted, input_unsorted, output_unsorted, N, n, m = utils.lo
     args.training_set,
     args.query_dimension_normalization)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
-torch.save(input_sorted,args.model_path.replace("model","input"))
-torch.save(output_sorted,args.model_path.replace("model","output"))
+# torch.save(input_sorted, args.model_path.replace("model", "input"))
+# torch.save(output_sorted, args.model_path.replace("model", "output"))
 
 input_test_sorted, output_test_sorted, input_test_unsorted, output_test_unsorted, N_test, n_test, m_test = utils.load_data_ListMLE(
     args.test_set,
@@ -192,7 +213,7 @@ class Net(nn.Module):
                 #     for i in range(upper_limit_n):
                 #         P_list[i] = exp_g[perm[i]] / denom[i]
 
-                if args.random_level == 1:
+                if args.random_level == 1 or args.random_level == 21:
                     for i in range(upper_limit_n):
                         P_list[i] = exp_g[i] / torch.sum(exp_g[i:valid_doc_num])  # one-hot groundtruth
 
@@ -265,7 +286,19 @@ model.eval(input_valid_unsorted, output_valid_unsorted, args.valid_output, args.
 model.eval(input_test_unsorted, output_test_unsorted, args.test_output, args.test_set,
            args.eval_output + ".test")
 
+fold_num = int(re.search(r"Fold([0-9]+)/", args.model_path).group(1))
+
 for epoch in range(args.epochs):
+
+    if args.random_level == 21:
+        if epoch % (args.epochs / len(input_string[(fold_num, args.iter)])) == 0:
+            selected_index = int(epoch / (args.epochs / len(input_string[(fold_num, args.iter)])))
+            print fold_num, args.iter, selected_index,input_string[(fold_num, args.iter)][min(selected_index,2)]
+
+            input_sorted = torch.load(
+                "/".join(args.model_path.split("/")[:-1]) + "/input.txt.1." + str(
+                    input_string[(fold_num, args.iter)][min(selected_index,2)]))
+
     # for query in range(input_sorted.data.size()[0]):
     # for k in range(10):
 
@@ -305,7 +338,7 @@ for epoch in range(args.epochs):
         # model.print_param()
         # Save the model see discussion: https: // discuss.pytorch.org / t / saving - torch - models / 838 / 4
 
-        if abs(neg_log_sum_loss.data[0] - prev_loss) < 5*1e-5:
+        if abs(neg_log_sum_loss.data[0] - prev_loss) < 5 * 1e-5:
             # if abs(neg_log_sum_loss.data[0] - prev_loss[query]) < 1e-5:
             torch.save(model.state_dict(), open(args.model_path, "w"))
             # scores_test = model.forward(input_test)

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 echo $0
 
-for rand in 1; do
-    for iter in 1 2 3 4 5 6 7 8 9 10; do
-        for i in 1 2 3 4 5; do
+for rand in 21; do
+for i in 1 2 3 4 5; do
+    for iter in 1 2; do
+
             folder=../data/TD2003/Fold${i}/
 #            echo  ${folder}trainlog_ListMLE.txt.${rand}.${iter} "started"
             rm -rf ${folder}trainlog_ListMLE.txt.${rand}.${iter}
