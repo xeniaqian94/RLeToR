@@ -10,6 +10,36 @@ import numpy as np
 import os
 import time
 
+
+def get_MAP(split, iter):
+    filename = "/".join(args.model_path.split("/")[:-1]) + "/trainlog_ListMLE.txt.1." + str(iter)
+    f = open(filename, "r")
+
+    # PLOT Epoch -1 ../data/OSHUMEDQueryLevelNorm/Fold2/train.txt 0.0 ndcg [0.470899470899471, 0.439153439153439, 0.421738817320727, 0.424403591870741, 0.42438884310625, 0.41510415828508, 0.418656649251772, 0.421345857301234, 0.422709106453915, 0.423753745391695] map 0.46835421242 precision [0.650793650793651, 0.619047619047619, 0.603174603174603, 0.599206349206349, 0.587301587301587, 0.555555555555556, 0.555555555555556, 0.555555555555556, 0.555555555555556, 0.541269841269841]
+    epochs = list()
+    training_process_metric = defaultdict(lambda: list())
+
+    for line in f.readlines():
+        if split in line and "PLOT " in line:
+            epoch = int(re.search(r"Epoch ([\-]*[0-9]+) ", line).group(1))
+            map = float(re.search(r"map ([0-9.]+) precision", line).group(1))
+            epochs += [epoch]
+            training_process_metric['map'] += [map]
+    f.close()
+
+    return training_process_metric['map'][-1]
+
+def get_index(split,method):
+    map_10=[]
+    for iter in range(1,11):
+        map_10+=[get_MAP(split,iter)]
+    map_10=np.array(map_10)
+
+    if method=="MAX":
+        return map_10.argsort()[-3:][::-1]+1
+    elif method=="MIN":
+        return map_10.argsort()[:3]+1
+
 dtype = torch.FloatTensor
 
 # pytorch example referece: https://github.com/jcjohnson/pytorch-examples/blob/master/autograd/two_layer_net_autograd.py
@@ -100,7 +130,7 @@ parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff
 
 parser.add_argument('--epochs', type=int, default=10000, metavar='N',
                     help='number of epochs to train (default: 10)')
-parser.add_argument('--lr', type=float, default=0.1, metavar='LR',
+parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
@@ -112,21 +142,6 @@ parser.add_argument('--query_dimension_normalization', type=bool, default=True, 
 args = parser.parse_args()
 
 input_string = defaultdict(lambda: list())
-
-input_string[(1, 1)] = [9, 3, 6]
-input_string[(1, 2)] = [1, 5, 7]
-
-input_string[(2, 1)] = [9, 1, 2]
-input_string[(2, 2)] = [7, 10, 3]
-
-input_string[(3, 1)] = [2, 10, 6]
-input_string[(3, 2)] = [1, 4, 8]
-
-input_string[(4, 1)] = [4, 9, 10]
-input_string[(4, 2)] = [1, 6, 8]
-
-input_string[(5, 1)] = [6, 4, 8]
-input_string[(5, 2)] = [1, 5, 3]
 
 torch.manual_seed(args.seed)
 
@@ -141,8 +156,44 @@ input_sorted, output_sorted, input_unsorted, output_unsorted, N, n, m = utils.lo
     args.training_set,
     args.query_dimension_normalization)  # N # of queries, n # document per query, m feature dimension (except the x_0 term)
 
-# torch.save(input_sorted, args.model_path.replace("model", "input"))
-# torch.save(output_sorted, args.model_path.replace("model", "output"))
+if args.random_level == 1:
+    torch.save(input_sorted, args.model_path.replace("model", "input"))
+    torch.save(output_sorted, args.model_path.replace("model", "output"))
+elif args.random_level>1:
+    if args.random_level == 2:
+        index_list=range(1,11)
+    elif args.random_level == 3:
+        if args.iter==1:
+            index_list=get_index("train","MAX")
+        else:
+            index_list=get_index("train","MIN")
+        print "Read from evallog select argmax 3"
+
+    elif args.random_level == 4:
+        if args.iter==1:
+            index_list=get_index("vali","MAX")
+        else:
+            index_list=get_index("vali","MIN")
+        print "Read from evallog select "
+
+    elif args.random_level == 5:
+        if args.iter==1:
+            index_list=get_index("test","MAX")
+        else:
+            index_list=get_index("test","MIN")
+        print "Read from evallog select "
+
+    print index_list
+    input_sorted = torch.load("/".join(args.model_path.split("/")[:-1]) + "/input.txt.1." + str(index_list[0]))
+    output_sorted = torch.load("/".join(args.model_path.split("/")[:-1]) + "/output.txt.1." + str(index_list[0]))
+    for iter in index_list[1:]:
+        input_sorted = torch.cat(
+            [input_sorted, torch.load("/".join(args.model_path.split("/")[:-1]) + "/input.txt.1." + str(iter))])
+        output_sorted = torch.cat(
+            [output_sorted, torch.load("/".join(args.model_path.split("/")[:-1]) + "/output.txt.1." + str(iter))])
+
+print "input sorted size " + str(input_sorted.size())
+print "output sorted size " + str(output_sorted.size())
 
 input_test_sorted, output_test_sorted, input_test_unsorted, output_test_unsorted, N_test, n_test, m_test = utils.load_data_ListMLE(
     args.test_set,
@@ -213,9 +264,9 @@ class Net(nn.Module):
                 #     for i in range(upper_limit_n):
                 #         P_list[i] = exp_g[perm[i]] / denom[i]
 
-                if args.random_level == 1 or args.random_level == 21:
-                    for i in range(upper_limit_n):
-                        P_list[i] = exp_g[i] / torch.sum(exp_g[i:valid_doc_num])  # one-hot groundtruth
+                # if args.random_level == 1 or args.random_level == 21:
+                for i in range(upper_limit_n):
+                    P_list[i] = exp_g[i] / torch.sum(exp_g[i:valid_doc_num])  # one-hot groundtruth
 
                 neg_log_sum -= sum(P_list.log())  # equation 9 in ListMLE paper
         # print neg_log_sum
@@ -290,14 +341,14 @@ fold_num = int(re.search(r"Fold([0-9]+)/", args.model_path).group(1))
 
 for epoch in range(args.epochs):
 
-    if args.random_level == 21:
-        if epoch % (args.epochs / len(input_string[(fold_num, args.iter)])) == 0:
-            selected_index = int(epoch / (args.epochs / len(input_string[(fold_num, args.iter)])))
-            print fold_num, args.iter, selected_index,input_string[(fold_num, args.iter)][min(selected_index,2)]
-
-            input_sorted = torch.load(
-                "/".join(args.model_path.split("/")[:-1]) + "/input.txt.1." + str(
-                    input_string[(fold_num, args.iter)][min(selected_index,2)]))
+    # if args.random_level == 21:
+    #     if epoch % (args.epochs / len(input_string[(fold_num, args.iter)])) == 0:
+    #         selected_index = int(epoch / (args.epochs / len(input_string[(fold_num, args.iter)])))
+    #         print fold_num, args.iter, selected_index,input_string[(fold_num, args.iter)][min(selected_index,2)]
+    #
+    #         input_sorted = torch.load(
+    #             "/".join(args.model_path.split("/")[:-1]) + "/input.txt.1." + str(
+    #                 input_string[(fold_num, args.iter)][min(selected_index,2)]))
 
     # for query in range(input_sorted.data.size()[0]):
     # for k in range(10):
@@ -338,7 +389,7 @@ for epoch in range(args.epochs):
         # model.print_param()
         # Save the model see discussion: https: // discuss.pytorch.org / t / saving - torch - models / 838 / 4
 
-        if abs(neg_log_sum_loss.data[0] - prev_loss) < 5 * 1e-5:
+        if abs(neg_log_sum_loss.data[0] - prev_loss) < 1e-3:
             # if abs(neg_log_sum_loss.data[0] - prev_loss[query]) < 1e-5:
             torch.save(model.state_dict(), open(args.model_path, "w"))
             # scores_test = model.forward(input_test)

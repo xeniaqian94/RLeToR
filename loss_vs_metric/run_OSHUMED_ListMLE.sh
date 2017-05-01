@@ -12,8 +12,8 @@ echo $0
 #    echo $folder "finished"
 #done
 
-for rand in 2; do
-    for iter in 1 2 3; do
+for rand in 1; do
+    for iter in 1; do
         for i in 1 2 3 4 5; do
             folder=../data/OSHUMEDQueryLevelNorm/Fold${i}/
             echo  ${folder}trainlog_ListMLE.txt.${rand}.${iter} "started"

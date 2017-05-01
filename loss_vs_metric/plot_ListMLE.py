@@ -170,7 +170,8 @@ for split in ['train', 'vali', 'test']:
     # plt.show()
     f.close()
 
-    if "vali" in split or "test" in split:
+    # if "vali" in split or "test" in split:
+    if "test" in split:
         print_message +=str(training_process_metric["map"][max_vali_map_epoch_index])+" "+str(training_process_metric["map"][-1])+" "
 
 print print_message
