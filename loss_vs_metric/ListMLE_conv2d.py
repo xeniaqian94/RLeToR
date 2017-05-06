@@ -71,6 +71,9 @@ parser.add_argument('--iter', type=int, default=1,
                     help="iteration")
 parser.add_argument('--model_path', type=str, default="../data/TD2003/Fold1/model.txt",
                     help='model path')
+parser.add_argument('--load_model_path', type=str, default="../data/TD2003/Fold1/model.txt",
+                    help='model path')
+
 parser.add_argument('--eval_output', type=str, default="../data/TD2003/Fold1/evaloutput.txt",
                     help='eval output path')
 parser.add_argument('--list_cutoff', type=int, default=100, metavar='list_cutoff',
@@ -134,7 +137,7 @@ parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
-parser.add_argument('--load_model', type=bool, default=False, metavar='S',
+parser.add_argument('--load_model', type=bool, default=True, metavar='S',
                     help='whether to load pre-trained model?')
 parser.add_argument('--query_dimension_normalization', type=bool, default=True, metavar='S',
                     help='whether to normalize by query-dimension?')
@@ -217,8 +220,8 @@ class Net(nn.Module):
         self.conv2.weight.data.zero_()
         # self.conv2.bias.data.zero_()
 
-        if args.load_model and os.path.exists(args.model_path):
-            self.load_state_dict(torch.load(args.model_path))
+        if args.load_model and os.path.exists(args.load_model_path):
+            self.load_state_dict(torch.load(args.load_model_path))
             print "Pre-trained model loaded"
 
             # self.tanh = nn.Tanh()

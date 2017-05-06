@@ -16,7 +16,6 @@ import torch.optim as optim
 import torch.autograd as autograd
 from torch.autograd import Variable
 
-
 parser = argparse.ArgumentParser(description='PyTorch REINFORCE example')
 parser.add_argument('--gamma', type=float, default=0.99, metavar='G',
                     help='discount factor (default: 0.99)')
@@ -27,7 +26,6 @@ parser.add_argument('--render', action='store_true',
 parser.add_argument('--log_interval', type=int, default=10, metavar='N',
                     help='interval between training status logs (default: 10)')
 args = parser.parse_args()
-
 
 env = gym.make('CartPole-v0')
 env.seed(args.seed)
@@ -46,7 +44,7 @@ class Policy(nn.Module):
     def forward(self, x):
         x = F.relu(self.affine1(x))
         action_scores = self.affine2(x)
-        print "F.softmax size "+str(F.softmax(action_scores).size())
+        # print "F.softmax size "+str(F.softmax(action_scores).size())
         return F.softmax(action_scores)
 
 
@@ -57,8 +55,9 @@ optimizer = optim.Adam(model.parameters(), lr=1e-2)
 def select_action(state):
     state = torch.from_numpy(state).float().unsqueeze(0)
     probs = model(Variable(state))
-    action = probs.multinomial()
-    print "action size "+str(action.data.size())
+    action = probs.multinomial()  # sample action from distribution
+    # Returns a Tensor where each row contains num_samples indices sampled from the multinomial probability distribution located in the corresponding row of Tensor input.
+    # print "action size "+str(action.data.size())
     model.saved_actions.append(action)
     return action.data
 
@@ -83,9 +82,9 @@ def finish_episode():
 running_reward = 10
 for i_episode in count(1):
     state = env.reset()
-    for t in range(10000): # Don't infinite loop while learning
+    for t in range(10000):  # Don't infinite loop while learning
         action = select_action(state)
-        state, reward, done, _ = env.step(action[0,0])
+        state, reward, done, _ = env.step(action[0, 0])
         if args.render:
             env.render()
         model.rewards.append(reward)

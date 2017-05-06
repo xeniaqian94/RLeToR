@@ -14,7 +14,7 @@ my %hsPrecisionRel = ("2", 1,
                       "0", 0
                 );
 
-my $iMaxPosition = 16;
+my $iMaxPosition = 1007;
 
 my $argc = $#ARGV+1;
 if($argc != 4)
