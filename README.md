@@ -1,2 +1,2 @@
 # RLeToR
-Implementations of REINFORCE Learning To Rank on OSHUMED, MQ, etc. dataset. 
+PyTorch implementations of REINFORCE Learning To Rank on OSHUMED, MQ, etc. dataset. 
